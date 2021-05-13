@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.davinci.perf.rc \
     init.davinci.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
