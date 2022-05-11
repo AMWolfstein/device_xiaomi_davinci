@@ -254,8 +254,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.davinci
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+    PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.davinci
+endif
 
 # Media
 PRODUCT_PACKAGES += \
