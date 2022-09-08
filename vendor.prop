@@ -77,6 +77,9 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
@@ -156,6 +159,12 @@ vendor.display.qdcm.mode_combine=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+
+# HVDCP
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.qg_cld_coff_gain=1.5
+persist.vendor.qg_coff_gain=1
+persist.vendor.qg_cold_temp=-150
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
