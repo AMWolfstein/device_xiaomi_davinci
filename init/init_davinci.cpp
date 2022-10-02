@@ -83,26 +83,32 @@ void vendor_load_properties() {
     std::string fingerprint;
     std::string description;
     std::string mod_device;
+    std::string marketname;
 
     if (region == "GLOBAL") {
         model = "Mi 9T";
         device = "davinci";
         description = "davinci-user 11 RKQ1.200826.002 V12.1.4.0.RFJMIXM release-keys";
         mod_device = "davinci_global";
+        marketname = "Mi 9T";
     } else if (region == "CN") {
         model = "Redmi K20";
         device = "davinci";
         description = "davinci-user 11 RKQ1.200826.002 V12.5.2.0.RFJCNXM release-keys";
+        marketname = "Redmi K20";
     } else if (region == "INDIA") {
         model = "Redmi K20";
         device = "davinciin";
         description = "davinciin-user 11 RKQ1.200826.002 V12.1.4.0.RFJINXM release-keys";
         mod_device = "davinciin_in_global";
+        marketname = "Redmi K20";
     }
 
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     property_override("ro.build.description", description.c_str());
+    property_override("bluetooth.device.default_name", marketname.c_str());
+    property_override("vendor.usb.product_string", marketname.c_str());
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
