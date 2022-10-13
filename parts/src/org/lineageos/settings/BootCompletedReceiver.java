@@ -46,7 +46,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         PopupCameraUtils.startService(context);
 
         // Dirac
-        DiracUtils.initialize(context);
+        DiracUtils.onBootCompleted(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
