@@ -127,7 +127,7 @@ PRODUCT_COPY_FILES += \
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUIGoogle
 
 # Display
 PRODUCT_PACKAGES += \
