@@ -452,9 +452,11 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libwpa_client \
     WifiOverlay \
+    WifiOverlayCN \
+    WifiOverlayGLOBAL \
+    WifiOverlayINDIA \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    DavinciWifiOverlay
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
