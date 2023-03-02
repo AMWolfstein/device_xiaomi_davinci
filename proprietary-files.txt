@@ -244,7 +244,7 @@ vendor/etc/camera/eyelineblush.cng
 -vendor/lib64/libarcsoft_portrait_lighting_c.so
 -vendor/lib64/libarcsoft_preview_deflicker.so
 -vendor/lib64/libarcsoft_supernight.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libtriplecam_video_optical_zoom.so
 
 # Camera face detection
@@ -899,9 +899,9 @@ vendor/etc/thermald-devices.conf
 -vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
 -vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
--vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so
+-vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so;MODULE=vendor.xiaomi.hardware.touchfeature@1.0_vendor
 -vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
--vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
+-vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so;MODULE=vendor.xiaomi.hardware.touchfeature@1.0_vendor
 
 # Touchscreen firmware
 vendor/firmware/goodix_gt9886_limit_f10_first.tporder
