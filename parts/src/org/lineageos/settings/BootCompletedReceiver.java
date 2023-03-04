@@ -25,7 +25,6 @@ import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.popupcamera.PopupCameraUtils;
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -44,9 +43,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 		
 	    // Popup camera
         PopupCameraUtils.startService(context);
-
-        // Dirac
-        DiracUtils.onBootCompleted(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
