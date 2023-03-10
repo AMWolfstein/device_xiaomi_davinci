@@ -19,6 +19,7 @@ android_app {
         "androidx.preference_preference",
         "org.lineageos.settings.resources",
         "vendor.xiaomi.hardware.motor-V1.0-java",
+        "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
     ],
 
     optimize: {
